@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  verapdf:
+    build:
+      context: ./docker/
+      dockerfile: Dockerfile
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./data:/data
+
